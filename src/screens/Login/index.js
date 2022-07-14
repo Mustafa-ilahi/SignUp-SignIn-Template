@@ -40,6 +40,7 @@ export default function Login() {
             <TextInput
               onChangeText={text => setPassword(text)}
               value={password}
+              secureTextEntry={true}
               style={styles.input}
             />
             {password !== '' && (
@@ -50,14 +51,12 @@ export default function Login() {
             )}
           </View>
         </View>
-        <View style={styles.footerView}>
-
-        </View>
-      <TouchableOpacity>
-        <View style={styles.btnView}>
-          <Text style={styles.btnText}>GiRiS YAP</Text>
-        </View>
-      </TouchableOpacity>
+        <View style={styles.footerView}></View>
+        <TouchableOpacity>
+          <View style={styles.btnView}>
+            <Text style={styles.btnText}>GiRiS YAP</Text>
+          </View>
+        </TouchableOpacity>
       </View>
     </View>
   );
