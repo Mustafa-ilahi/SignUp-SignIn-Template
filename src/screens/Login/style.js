@@ -2,7 +2,6 @@ import {sizes, colors, fontSize, fontFamily} from '../../services';
 const {StyleSheet} = require('react-native');
 
 export const styles = StyleSheet.create({
- 
   image: {
     borderTopLeftRadius: sizes.baseMargin,
     borderTopRightRadius: sizes.baseMargin,
@@ -53,21 +52,24 @@ export const styles = StyleSheet.create({
   icon: {
     right: sizes.baseMargin * 2,
   },
-  btnView:{
-    backgroundColor:colors.buttonColor,
-    padding:sizes.baseMargin,
+  btnView: {
+    backgroundColor: colors.buttonColor,
+    padding: sizes.baseMargin,
     marginTop: sizes.doubleBaseMargin,
-    width:sizes.screenWidth * 0.5,
-    alignSelf:'center',
-    borderRadius:sizes.doubleBaseMargin,
+    width: sizes.screenWidth * 0.5,
+    alignSelf: 'center',
+    borderRadius: sizes.doubleBaseMargin,
   },
-  btnText:{
-    color:colors.white,
-    textAlign:'center',
-    fontWeight:fontFamily.appTextBold
+  btnText: {
+    color: colors.white,
+    textAlign: 'center',
+    fontWeight: fontFamily.appTextBold,
   },
-  footerView:{
-    flexDirection:'row',
-    justifyContent:'space-around'
-  }
+  footerView: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    alignItems: 'center',
+    paddingTop: sizes.baseMargin,
+  },
+  row: {flexDirection: 'row', right: sizes.TinyMargin},
 });

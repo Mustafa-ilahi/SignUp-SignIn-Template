@@ -9,6 +9,7 @@ import {
   View,
 } from 'react-native';
 import {styles} from './style';
+
 export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -51,7 +52,18 @@ export default function Login() {
             )}
           </View>
         </View>
-        <View style={styles.footerView}></View>
+        <View style={styles.footerView}>
+          <View style={styles.row}>
+            <Image
+              source={require('../../assets/checkbox.png')}
+              style={styles.checkboxIcon}
+            />
+            <Text>Beni Hatirla</Text>
+          </View>
+          <View>
+            <Text>Sifremi Unuttum </Text>
+          </View>
+        </View>
         <TouchableOpacity>
           <View style={styles.btnView}>
             <Text style={styles.btnText}>GiRiS YAP</Text>

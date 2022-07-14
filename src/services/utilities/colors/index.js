@@ -2,6 +2,7 @@ export const colors = {
   white: '#ffffff',
   black: '#000000',
   error: 'rgba(200, 0, 0, 0.8)',
+  red:'#e12427',
   gray: '#666',
   textColor: '#3f2996',
   label: '#c5c5c5',
@@ -17,4 +18,5 @@ export const colors = {
   appBgColorPrimary: '#1D3932',
   appBgColor3: '#23a455',
   buttonColor: '#5f43c3',
+  
 };
